@@ -15,7 +15,7 @@ class Employee {
     // Constructor. Please set all the data in constructor.
     public Employee(String name, int age, Gender gender, double salary) {
         this.name = name;
-	this.age = age;
+        this.age = age;
 	this.gender = gender;
 	this.salary = salary;//write your code here
     }
