@@ -14,10 +14,10 @@ class Employee {
 
     // Constructor. Please set all the data in constructor.
     public Employee(String name, int age, Gender gender, double salary) {
-    	this.name = name;
-		this.age = age;
-		this.gender = gender;
-		this.salary = salary;//write your code here
+        this.name = name;
+	this.age = age;
+	this.gender = gender;
+	this.salary = salary;//write your code here
     }
     
     // Getter for `name`. Return the current `name` data
@@ -47,14 +47,14 @@ public class Assignment2 {
      */
     public double socialSecurityTax(Employee employee) {
         double tax;
-		if(employee.salary <= 8900){
-			tax = employee.salary * 6.2%;
-		}
-		else{
-			tax = 106800 * 6.2%;//write your code here
-		}
-		return tax;
-		System.out.println("The Social Security Tax of" + employee.getName + "is" + tax);
+	if(employee.salary <= 8900){
+	    tax = employee.salary * 6.2%;
+	    }
+	else{
+	    tax = 106800 * 6.2%;//write your code here
+	    }
+	return tax;
+	System.out.println("The Social Security Tax of" + employee.getName + "is" + tax);
     }
 
     /**
@@ -65,20 +65,20 @@ public class Assignment2 {
      */
     public double insuranceCoverage(Employee employee) {
         double contribution;
-		if(employee.age < 35){
-			contribution = employee.salary * 3%;
-		}
-		else if(employee.age <= 50){
-			contribution = employee.salary * 4%;	
-		}
-		else if(employee.age < 60){
-			contribution = employee.salary * 5%；
-		}
-		else{
-			contribution = employee.salary * 6%;
-		}
-		return contribution;
-		System.out.println("The contribution for insurance coverage of" + employee.getName + "is" + contribution);//write your code here
+	if(employee.age < 35){
+	    contribution = employee.salary * 3%;
+	    }
+	else if(employee.age <= 50){
+	    contribution = employee.salary * 4%;	
+	    }
+	else if(employee.age < 60){
+	    contribution = employee.salary * 5%；
+	    }
+	else{
+	    contribution = employee.salary * 6%;
+	    }
+	return contribution;
+	System.out.println("The contribution for insurance coverage of" + employee.getName + "is" + contribution);//write your code here
     }
 
     /**
@@ -88,17 +88,17 @@ public class Assignment2 {
      */
     public void sortSalary(Employee e1, Employee e2, Employee e3) {
         Emplpyee[] e = {e1, e2, e3};
-		for(int j=0; j < e.length, j++){
-			for(int i = 0; i < e.length - j, i++){
-				if(e[i].salary > e[i+1].salary){
-					Employee temp = e[i];
-					e[i+1] = e[i];
-					e[i] = temp;
-				}
-			}
+	for(int j=0; j < e.length, j++){
+	    for(int i = 0; i < e.length - j, i++){
+	        if(e[i].salary > e[i+1].salary){
+		    Employee temp = e[i];
+		    e[i+1] = e[i];
+		    e[i] = temp;
+		    }
 		}
-		System.out.println(e[0]+ " " + e[1] + " " + e[2]);	
-		}
+	}
+	System.out.println(e[0]+ " " + e[1] + " " + e[2]);	
+	}
 			
 		//write your code here
     }
@@ -111,15 +111,15 @@ public class Assignment2 {
      */
     public void tripleSalary(Employee employee) {
         double temp;
-		temp = employee.salary *3;
-		employee.salary = temp;//write your code here
+	temp = employee.salary *3;
+	employee.salary = temp;//write your code here
     }
 
-	public void raiseSalary(double byPercent){
-		double temp;
-		temp = employee.salary * (1 + byPercet);
-		employee.salary = temp;
-	}
+    public void raiseSalary(double byPercent){
+	double temp;
+	temp = employee.salary * (1 + byPercet);
+	employee.salary = temp;
+    }
 
     //Extra credit
 
