@@ -97,7 +97,7 @@ public class Assignment2 {
 		    }
 		}
 	}
-	System.out.println(e[0]+ " " + e[1] + " " + e[2]);	
+        System.out.println(e[0]+ " " + e[1] + " " + e[2]);	
 	}
 			
 		//write your code here
