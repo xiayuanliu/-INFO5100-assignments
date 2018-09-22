@@ -117,7 +117,7 @@ public class Assignment2 {
 
     public void raiseSalary(double byPercent){
 	double temp;
-	temp = employee.salary * (1 + byPercet);
+	temp = employee.salary * (1 + byPercet/100);
 	employee.salary = temp;
     }
 
