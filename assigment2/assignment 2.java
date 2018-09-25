@@ -14,6 +14,7 @@ class Employee {
 
     // Constructor. Please set all the data in constructor.
     public Employee(String name, int age, Gender gender, double salary) {
+	// scores: 2/2
         this.name = name;
         this.age = age;
 	this.gender = gender;
@@ -46,15 +47,19 @@ public class Assignment2 {
      * If the salary is more than 8900, the Social Security Tax is 6.2% of 106,800.
      */
     public double socialSecurityTax(Employee employee) {
+	    // scores: 1/2
         double tax;
 	if(employee.salary <= 8900){
 	    tax = employee.salary * 6.2%;
+		// 6.2% should be 0.0062
 	    }
 	else{
 	    tax = 106800 * 6.2%;//write your code here
+		// 6.2% should be 0.0062
 	    }
 	return tax;
 	System.out.println("The Social Security Tax of" + employee.getName + "is" + tax);
+	    // write the print function before return
     }
 
     /**
@@ -64,6 +69,9 @@ public class Assignment2 {
      * If the employee is between 50 and 60(exclusive), rate is 5% of salary; If the employee is above 60, rate is 6% of salary.
      */
     public double insuranceCoverage(Employee employee) {
+	    // scores: 1/2
+	    // Don't use % to present presentage. % means modulo in Java.
+	    // write the print function before return
         double contribution;
 	if(employee.age < 35){
 	    contribution = employee.salary * 3%;
@@ -87,6 +95,7 @@ public class Assignment2 {
      * John Alice Jenny
      */
     public void sortSalary(Employee e1, Employee e2, Employee e3) {
+	    // scores: 2/2
         Emplpyee[] e = {e1, e2, e3};
 	for(int j=0; j < e.length, j++){
 	    for(int i = 0; i < e.length - j, i++){
@@ -110,6 +119,10 @@ public class Assignment2 {
      * Try to add a new method in Employee class: public void raiseSalary(double byPercent)
      */
     public void tripleSalary(Employee employee) {
+	    // scores: 2/2
+	    // We'd better not modify the employee data in this funtion. 
+	    // In stead we'd better write a function in `Employee` class called `public void raiseSalary(double byPercent)`.
+	    // Then in `tripleSalary` we just call `employee.raiseSalary(percent);`
         double temp;
 	temp = employee.salary *3;
 	employee.salary = temp;//write your code here
@@ -135,6 +148,7 @@ public class Assignment2 {
      */
     /*
       Why swap failed?
+      // scores: 2/2
 	  Because the parameters of method are passed by value.
 	  When we put a and b to swap(), swap() creats a copy of the values of references a and b then dose its work.
 	  After method, nothing changes in references a and b.
@@ -156,3 +170,5 @@ public class Assignment2 {
         y = temp;
     }
 }
+
+// Total scores: 10/10
