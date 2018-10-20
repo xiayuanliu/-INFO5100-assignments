@@ -11,7 +11,7 @@ class CandyTest {
 
 	@Test
 	void testGetWeight() {
-		assertEquals(String.format("%.2f", 2), new Candy("Candy", 2, 3).getWeight());
+		assertEquals(String.format("%.2f", 2.5), new Candy("Candy", 2.5, 3).getWeight());
 	}
 
 	@Test
